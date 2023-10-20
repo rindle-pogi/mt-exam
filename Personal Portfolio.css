@@ -1,0 +1,617 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #18181B;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo {
+    max-width: 100px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+
+}
+
+.link a:hover::after{
+    width: 100%;
+}
+
+/* Hire me button */
+.btn{
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+.btn:hover{
+    /* hover effect ng button hire me */
+background-color: #1e40af; 
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    z-index: -100;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+
+header .content{
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+/* rindle span design home page */
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #4465a1;
+}
+
+header .content p{
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+header .image{
+    position: relative;
+}
+
+/* yung o sa image ko */
+header .image::before{
+    content: "R";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: #1d4ed8;
+    opacity: 0.2;
+    z-index: -100;
+}
+
+header .image img{
+    max-width: 600px;
+    margin: auto;
+
+}
+
+section .header{
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+
+.features{
+
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+.features .card{
+    background-color: #dee2e9;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.features .card:hover{
+    background-color: #bec0c4;
+    border-color: #fcf8f8;
+}
+
+/* yung icons design */
+.features .card span{
+    display: inline-block;
+    background-color: #fbfcff;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: rgb(51, 41, 184);
+    border-radius: 5px;
+}
+
+.features .card h4{
+    margin-bottom: 0.5rem;
+    color: rgb(5, 10, 10);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.features .card p{
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.features .card a{
+    color: #1d4ed8;
+    transition: all 0.3s ease; 
+}
+
+.features .card a:hover{
+    color: #1e40af;
+}
+
+
+
+/* alcohol marker(am) samples------------------ */
+
+
+.am-samples{
+
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+
+.am-samples .card{
+    background-color: #dee2e9;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.am-samples .card:hover{
+    background-color: #bec0c4;
+    border-color: #fcf8f8;
+}
+
+/* yung icons design */
+.am-samples .card span{
+    display: inline-block;
+    background-color: #fbfcff;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: rgb(51, 41, 184);
+    border-radius: 5px;
+}
+
+.am-samples .card h4{
+    margin-bottom: 0.5rem;
+    color: rgb(5, 10, 10);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.am-samples .card p{
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.am-samples .card a{
+    color: #1d4ed8;
+    transition: all 0.3s ease; 
+}
+
+.am-samples .card a:hover{
+    color: #1e40af;
+}
+
+
+/* text sa baba ng pricing plans (subheader sa pricing) */
+.sub-header{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #ccc;
+}
+
+.pricing{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+
+/* cards sa pricing plans */
+/* card ni rindle plan ------------*/
+.pricing .card_rindle{
+    padding: 3rem;
+    background-color: #a15508;
+    display:flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+
+}
+/* hover ng card_rindle pricing */
+.pricing .card_rindle:hover{
+    background-color: rgb(121, 64, 8);
+    border-color: #fcf8f8;
+}
+
+/* content ng rindle plan */
+.pricing .card_rindle .content{
+    flex: 1;
+    margin-bottom: 2rem;
+
+}
+
+.pricing .card_rindle h4.card_rindle_h4{
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;    
+}
+
+.pricing .card_rindle .card_rindle_h4{
+    color: white;
+}
+.pricing .card_rindle h3{
+    color: rgb(0, 0, 0);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.pricing .card_rindle p{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+.pricing .card_rindle button{
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.pricing .card_rindle button:hover{
+    color: #000000;
+    border: 2px solid #ffffff;
+    background-color: white;
+    transition: 0.4s;
+}
+
+
+/* start ng card_rindple_plus */
+.pricing .card_rindle_plus{
+    padding: 3rem;
+    background-color: #aaa7a3;
+    display:flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+
+}
+/* hover ng card_rindle pricing */
+.pricing .card_rindle_plus:hover{
+    background-color: rgb(117, 114, 112);
+    border-color: #fcf8f8;
+}
+
+/* content ng rindle plan*/
+.pricing .card_rindle_plus .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card_rindle_plus h4.card_rindle_plus_h4{
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700; 
+}
+
+.pricing .card_rindle_plus h3{
+    color: rgb(0, 0, 0);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.pricing .card_rindle_plus p{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing .card_rindle_plus button{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.pricing .card_rindle_plus button:hover{
+    color: #000000;
+    border: 2px solid #ffffff;
+    background-color: white;
+    transition: 0.4s;
+}
+
+
+/* end ng card rindle_plus */
+
+.pricing .card_rin_promax{
+    padding: 3rem;
+    background-color: #e7cb2a;
+    display:flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.pricing .card_rin_promax:hover{
+    background-color: #bda417;
+    border-color: #fcf8f8;
+}
+
+.pricing .card_rin_promax .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+/* .pricing .card h4.rindle_plan{
+    margin-bottom: 1rem;
+    color: #CD7F32;
+    font-size: 1.2rem;
+    font-weight: 600;
+} */
+
+.pricing .card_rin_promax h4.platinum_plan{
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700; 
+}
+/* prcing card h3 ay design ng price ng plan */
+.pricing .card_rin_promax h3{
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+/* details ng plan */
+.pricing .card_rin_promax p{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+/* ewan ano to */
+.pricing .card_rin_promax .p .i{
+    color: #ee1515;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.pricing .card_rin_promax button{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.pricing .card_rin_promax button:hover{
+    color: #000000;
+    border: 2px solid #ffffff;
+    background-color: white;
+    transition: 0.4s;
+}
+
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+}
+
+footer .column .logo{
+    max-width: 100px;
+    margin-bottom: 2rem;
+}
+
+footer .column  p{
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+footer .column  .socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .column .socials a{
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3 ease;
+}
+
+footer .column .socials a:hover{
+    color: #fff;
+    background-color: #1d4ed8;
+    border: #1d4ed8;
+}
+
+footer .column h4{
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+footer .column > a{
+    display: block;
+    color: #fff;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+footer .column > a:hover{
+    color: #1d4ed8;
+}
+
+
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media (width < 900px){
+    .nav-links{
+        display: none;
+    }
+
+    header{
+        grid-template-columns: repeat(1, 1(fr));
+    }
+
+    header .img{
+        grid-area: 1/1/2/2;
+    }
+
+    .features{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (width < 600px){
+    .header .image::before{
+        display: none;
+    }
+
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer{
+        grid-template-columns: 1fr 150px;
+    }
+
+
+}
